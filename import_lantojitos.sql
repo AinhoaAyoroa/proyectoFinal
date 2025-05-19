@@ -81,19 +81,6 @@ CREATE TABLE `detalle_pedido_aditivo` (
     ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE `tickets` (
-  `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `detalles` TEXT NOT NULL,              
-  `fecha` DATETIME NOT NULL,
-  `pedido_id` BIGINT UNSIGNED NOT NULL UNIQUE,
-  PRIMARY KEY (`id`),
-  CONSTRAINT `fk_ticket_pedido`
-    FOREIGN KEY (`pedido_id`)
-    REFERENCES `pedidos`(`id`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 INSERT INTO productos (id, nombre, descripcion, precio_base, categoria) VALUES
   (1, 'Mini Bocadillo Jamón Serrano',
       'Mini bocadillo de jamón serrano con tomate y aceite de oliva',
@@ -111,7 +98,6 @@ INSERT INTO productos (id, nombre, descripcion, precio_base, categoria) VALUES
       'Mini bocadillo con pollo al curry, manzana y salsa de yogur',
       5.00, 'Bocadillos');
 
--- Poblado inicial: aditivos
 INSERT INTO aditivos (id, nombre, tipo, precio_extra) VALUES
   -- Panes
   (10, 'Pan Blanco',    'Pan',     0.00),
@@ -139,4 +125,3 @@ INSERT INTO aditivos (id, nombre, tipo, precio_extra) VALUES
   (33, 'Pincho Hello Kitty',    'Pincho', 1.00),
   (34, 'Pincho My Little Pony', 'Pincho', 1.00),
   (35, 'Pincho Fable',          'Pincho', 1.00);
-
