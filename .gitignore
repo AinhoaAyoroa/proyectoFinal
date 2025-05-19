@@ -1,0 +1,20 @@
+# --- Ignorar builds de Spring/Java ---
+/backend/target/
+/backend/*.iml
+/backend/.idea/
+/backend/out/
+
+# --- Ignorar builds de Flutter/Dart ---
+/app_flutter/.dart_tool/
+/app_flutter/build/
+/app_flutter/.packages
+/app_flutter/.flutter-plugins*
+/app_flutter/ios/Flutter/Flutter.framework
+
+# SQL
+/sql/*.sql
+
+# IDEs y SO
+*.log
+*.swp
+.DS_Store
