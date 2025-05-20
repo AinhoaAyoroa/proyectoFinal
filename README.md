@@ -27,7 +27,7 @@ Este repositorio contiene:
    ```bash
    mysql -u root -p lantojitos_db < import_lantojitos.sql
 3. **Configurar Spring Boot**
-   ```Edita src/main/resources/application.properties con tus credenciales MySQL y URL
+   - Edita src/main/resources/application.properties con tus credenciales MySQL y URL
 4. **Arrancar la API**
 5. **Arrancar lantojitos_app**
 6. **Arrancar ordenes_app**
