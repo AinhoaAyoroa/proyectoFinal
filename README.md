@@ -19,6 +19,7 @@ Este repositorio contiene:
 3. Edita el application.propierties del proyecto de Spring conforme a las propiedades de tu ordenador
 4. Arranca la API de Spring boot
 5. Ejecuta el fronted con el proyecto flutter
+   ``` flutter -run```
 
 ## 🎯 Uso
 - **Home:** Muestra todos los mini-bocadillos
