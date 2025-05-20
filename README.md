@@ -29,8 +29,11 @@ Este repositorio contiene:
 3. **Configurar Spring Boot**
    - Edita src/main/resources/application.properties con tus credenciales MySQL y URL
 4. **Arrancar la API**
-5. **Arrancar lantojitos_app**
-6. **Arrancar ordenes_app**
+5. **Arrancar lantojitos_app con:**
+   ```bash
+      flutter -run
+   ```
+7. **Arrancar ordenes_app**
 
 ## 🎯 Uso
 - **Home (lantojitos_app)**  
