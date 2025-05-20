@@ -2,7 +2,7 @@
 Este repositorio contiene:  
 1. **Backend**: API REST con Spring Boot + MySQL  
 2. **Frontend**: App móvil/web con Flutter (cliente de pedidos)  
-3. **Dashboard de Pedidos**: App Flutter para monitorizar y actualizar en tiempo real los pedidos  
+3. **Dashboard de Pedidos**: App Flutter para manejar y actualizar en tiempo real los pedidos  
 4. **Esquema SQL**: Import de la base de datos MySQL
 
 ## 📋 Prerrequisitos
